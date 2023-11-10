@@ -1,0 +1,134 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#nav_ul li a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#nav_ul li a:hover {
+    color: orange;
+}
+
+.forms {
+    width: 75vh;
+    height: 82vh;
+    padding: 2%;
+    box-shadow: 0 5px 50px rgba(0, 67, 101, 0.5);
+    border-radius: 3%;
+    margin-left: 58%;
+    background-color: #ffffff;
+    position: absolute;
+    margin-top: 2.5%;
+}
+
+.forms label {
+    font-weight: bold;
+}
+
+.mainbody {
+    display: flex;
+    margin-top: 3%;
+}
+
+.smallboy {
+    background: url("../images/kobby-mendez-d0oYF8hm4GI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vh;
+    height: 55vh;
+    margin-left: 2%;
+
+}
+
+.boy {
+    width: 130vh;
+    height: 50vh;
+    margin-left: -5%;
+}
+
+.mainboy {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.boy_text {
+    width: 100vh;
+}
+
+.boy_text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+footer {
+    margin-top: 5%;
+}
+
+/* SECOND REGISTRATION FORM */
+.mainbody_form2 {
+    width: 100vh;
+    height: 70vh;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8%;
+    margin-left: 26%;
+    padding: 50px;
+    box-shadow: 0 5px 50px rgba(0, 67, 101, 0.5);
+}
+
+.inputbox {
+    color: #030303;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+/* RECORDS */
+.info {
+    font-size: 3rem;
+    margin-top: 5%;
+}
+
+/* CHANGE PASSWORD FORMS */
+.form2 {
+    width: 100vh;
+    height: 60vh;
+}
+
+.bar2 {
+    width: 100vh;
+    background-color: rgb(4, 157, 196);
+    height: 2vh;
+}
+
+.mainFormContainer2 {
+    margin-top: 10%;
+}
+
+.text-beside-form{
+    margin-top: 20%;
+    margin-left: 8%;
+    font-weight: 500;
+}
+.inputs_container {
+  margin-top: 18%;
+}
+.button{
+    width: 90%;
+    border-radius: none;
+    height: 6vh;
+}

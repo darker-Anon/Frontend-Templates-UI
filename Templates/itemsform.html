@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/forms.css">
+
+    <script src="https://use.fontawesome.com/76f63edc47.js"></script>
+
+    <script src="https://kit.fontawesome.com/b78dd34b72.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" style="background-color: #4F4557; height: 11vh;">
+            <!-- Navbar content -->
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">
+                    Google
+                </a>
+                <ul class="nav justify-content-center" id="nav_ul">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mainbody">
+        <div class="mainboy">
+            <div class="smallboy rounded">
+                <!-- <img src="../static/images/boy-removebg-preview.png" alt="" class="boy"> -->
+            </div>
+            <div class="boy_text m-4">
+                <p>Want to Donate Items??? <br> No worries we've got you covered <br> Fill the form
+                    to start donation Process <i class="fas fa-chevron-circle-right"
+                        style="color: #ff9500; font-size: 4rem; margin-left: 2%;"></i></p>
+            </div>
+        </div>
+
+        <div class="forms">
+            <form action="#" method="post">
+                <h1 style="color:rgb(0, 0, 0);">Donate To CharityToday</h1>
+                <p style="color:rgb(0, 0, 0); font-size: 1.3rem;">This form will help us know the Items you
+                    want
+                    to
+                    donate <i class="fa fa-rocket" aria-hidden="true"></i></p>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Number of Items</label>
+                    <input type="number" name="numberItems" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Number of Items" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Drop Off Region</label>
+                    <select name="Drop_point" class="form-control" id="exampleFormControlInput1">
+                        <option value="Greater Accra">Greater Accra Region</option>
+                        <option value="Central Region">Central Region</option>
+                        <option value="Ashanti Region">Ashanti Region</option>
+                        <option value="Western Region">Western Region</option>
+                        <option value="Oti Region">Oti Region</option>
+                        <option value="UpperWest Region">UpperWest Region</option>
+                        <option value="UpperEast Region">UpperEast Region</option>
+                        <option value="North East Region">North East Region</option>
+                        <option value="Brong Ahafo Region">Brong Ahafo Region</option>
+                        <option value="Bono East Region">Bono East Region</option>
+                        <option value="Eastern Region">Eastern Region</option>
+                        <option value="Volta Region">Volta Region</option>
+                        <option value="Northern Region">Northern Region</option>
+                        <option value="Savannah Region">Savannah Region</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">List Items to
+                        Donate</label>
+                    <textarea class="form-control" name="itemList" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                <input type="submit" value="Donate" style="background:#EE9322; width: 25vh;"
+                    class="btn btn-lg text-white" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <hr>
+        </div>
+        <center>
+            <p>copyright @ CharityToday </p>
+        </center>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+$outer_border: 1px black solid;
+$input_width: 55vh;
+$margin: 5%;
+$form_width: 60vh;
+
+fieldset {
+  border: $outer_border;
+}
+.inputs {
+  width: $input_width;
+  margin: $margin;
+  margin-left: -1%;
+}
+
+.form {
+  width: $form_width;
+  //   border: $outer_border;
+  height: 70vh;
+}
+
+.inputs_container {
+  margin-top: 10%;
+}
+
+.bar {
+  width: $form_width;
+  background-color: rgb(98, 234, 98);
+  height: 2vh;
+}
+
+.button {
+  width: $input_width;
+  height: 6vh;
+}
+
+.google {
+  margin-top: 10%;
+}
+
+.google {
+  button {
+    height: 8vh;
+    border: $outer_border;
+  }
+}
+
+

@@ -1,0 +1,56 @@
+.mainFormContainer {
+  margin-top: 5%;
+}
+
+.inputs {
+  width: 55vh;
+  margin: 5%;
+  margin-left: -1%;
+}
+
+.form {
+  width: 60vh;
+  height: 70vh;
+}
+
+.inputs_container {
+  margin-top: 10%;
+}
+
+.bar {
+  width: 60vh;
+  background-color: rgb(98, 234, 98);
+  height: 2vh;
+}
+
+.button {
+  width: 55vh;
+  height: 6vh;
+}
+
+.google {
+  margin-top: 10%;
+}
+
+.google button {
+  height: 8vh;
+  border: 1px black solid;
+}
+
+/* RESET FORM  */
+.form2 {
+  width: 60vh;
+  height: 45vh;
+}
+
+.bar2 {
+  width: 60vh;
+  background-color: rgb(4, 157, 196);
+  height: 2vh;
+}
+
+.mainFormContainer2 {
+  margin-top: 10%;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASS</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.0-dist/css/bootstrap.min.css"
+    />
+
+    <script src="../bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+
+    <script src="https://use.fontawesome.com/76f63edc47.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/b78dd34b72.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="mainFormContainer">
+      <center>
+        <div class="bar"></div>
+
+        <form action="" class="form m-3 shadow rounded">
+          <div class="m-3 h1_p1">
+            <h1>
+              <i class="fa-solid fa-user" style="color: #0d72bf"></i> Login
+            </h1>
+
+            <p class="text-grey m-5">
+              Access your account when you login <i class="fa-solid fa-key"></i>
+            </p>
+          </div>
+          <div class="inputs_container">
+            <div class="inputs">
+              <input
+                class="form-control form-control-lg m-2"
+                id="myInput"
+                type="Email"
+                placeholder="Email"
+                aria-label=".form-control-lg example"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <input
+                class="form-control form-control-lg m-2"
+                id="myInputs"
+                type="text"
+                placeholder="Password"
+                aria-label=".form-control-lg example"
+                required
+              />
+            </div>
+
+            <input type="submit" class="btn btn-primary button" value="Login" />
+            <label for="" class="m-2"
+              >Already have an account? <a href=""> sign up</a></label
+            >
+          </div>
+          <div class="container">
+            <hr />
+          </div>
+          <div class="google">
+            <button class="btn btn-white button round">
+              <img
+                src="../static/images/google.png"
+                width="10%"
+                height="60%"
+                alt="logo"
+              />
+              <h6>Sign up with Google</h6>
+            </button>
+          </div>
+        </form>
+      </center>
+    </div>
+    <script src="../static/js/inputsField.js"></script>
+  </body>
+</html>

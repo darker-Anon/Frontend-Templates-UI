@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Password</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/forms.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.0-dist/css/bootstrap.min.css"
+    />
+
+    <script src="../bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+
+    <script src="https://use.fontawesome.com/76f63edc47.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/b78dd34b72.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="mainFormContainer2">
+      <center>
+        <div class="bar2"></div>
+
+        <div class="d-flex form2 m-3 shadow rounded">
+          <div class="changepassform">
+            <form action="">
+              <div class="m-3 h1_p1">
+                <h1>
+                  <i
+                    class="fa-solid fa-user"
+                    style="color: rgb(4, 157, 196)"
+                  ></i>
+                  Reset Your Password
+                </h1>
+              </div>
+
+              <div class="inputs_container">
+                <div class="inputs">
+                  <input
+                    class="form-control form-control-lg m-2"
+                    type="Password"
+                    placeholder="New Password"
+                    aria-label=".form-control-lg example"
+                    name="New_Password"
+                  />
+                </div>
+                <br />
+                <div class="inputs">
+                  <input
+                    class="form-control form-control-lg m-2"
+                    id="myInput"
+                    type="Password"
+                    placeholder="Confirm Password"
+                    aria-label=".form-control-lg example"
+                    name="Confirm_Password"
+                  />
+                </div>
+                <br />
+                <input
+                  type="submit"
+                  class="btn btn-outline-primary shadow button"
+                  value="Login"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="text-beside-form">
+            <p>Password Must contain:</p>
+            <p>At least 1 uppercase (A-Z)</p>
+            <p>At least 1 number (0-9)</p>
+            <p>At least 1 symbol (@!"...)</p>
+          </div>
+        </div>
+      </center>
+    </div>
+
+    <script src="../static/js/inputsField.js"></script>
+  </body>
+</html>

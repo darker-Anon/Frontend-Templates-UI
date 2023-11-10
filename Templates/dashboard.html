@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+
+    <script src="https://use.fontawesome.com/76f63edc47.js"></script>
+
+    <script src="https://kit.fontawesome.com/b78dd34b72.js" crossorigin="anonymous"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#">Sign out</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg sidebar collapse shadow">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column" id="sidebar_font">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span><i class="fas fa-home"></i></span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><i class="fas fa-cart-arrow-down"></i></span>
+                                Wishlist
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><i class="fas fa-hand-holding-usd"></i></span>
+                                Donation
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span"><i class="fas fa-warehouse"></i></span>
+                                    Items Donated
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><i class="fas fa-warehouse"></i></span>
+                                $ Donation Reports
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><i class="fas fa-user-cog"></i></span>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                            <span data-feather="calendar"></span>
+                            This week
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="reading_container">
+                    <div class="readings shadow rounded text-white">
+                        <h4>Total Amount Donated $</h4> <br>
+                        <h1>$10,000 <i class="fas fa-chart-line"></i> </h1>
+                    </div>
+                    <div class="readings2 shadow rounded text-white">
+                        <h4>Items Donated <i class="fas fa-home"></i></h4> <br>
+                        <h1>5</h1>
+                    </div>
+                </div>
+
+                <div>
+ <h1 style="color: rgb(0, 0, 0); margin-top:10%;">My Monthly Donations <i class="fa fa-bar-chart"
+                                aria-hidden="true"></i>
+                        </h1>
+                <div class="d-flex justify-content-between text-white">
+                    <div class="dashboard bg-light">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <!-- <div class="dashboard shadow bg-light">
+                        <h1 style="color: rgb(0, 0, 0);">Regional Analysis <i class="fa fa-bar-chart"
+                                aria-hidden="true"></i>
+                        </h1>
+                        <canvas id="secondChart"></canvas>
+                    </div> -->
+                </div></div>
+
+                <div class="table_container m-5">
+                    <h2>Transaction Summary</h2>
+                    <div class="container">
+                        <hr>
+                    </div>
+                    <div class="table-responsive tb_resp">
+                        <table class="table table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Orphange Donated to</th>
+                                    <th scope="col">Type of Donation</th>
+                                    <th scope="col">Cash/items Donated</th>
+                                    <th scope="col">Donation Month</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1,001</td>
+                                    <td>random</td>
+                                    <td>data</td>
+                                    <td>placeholder</td>
+                                    <td>text</td>
+                                </tr>
+                                <tr>
+                                    <td>1,002</td>
+                                    <td>placeholder</td>
+                                    <td>irrelevant</td>
+                                    <td>visual</td>
+                                    <td>layout</td>
+                                </tr>
+                                <tr>
+                                    <td>1,003</td>
+                                    <td>data</td>
+                                    <td>rich</td>
+                                    <td>dashboard</td>
+                                    <td>tabular</td>
+                                </tr>
+                                <tr>
+                                    <td>1,003</td>
+                                    <td>information</td>
+                                    <td>placeholder</td>
+                                    <td>illustrative</td>
+                                    <td>data</td>
+                                </tr>
+                                <tr>
+                                    <td>1,004</td>
+                                    <td>text</td>
+                                    <td>random</td>
+                                    <td>layout</td>
+                                    <td>dashboard</td>
+                                </tr>
+                                <tr>
+                                    <td>1,005</td>
+                                    <td>dashboard</td>
+                                    <td>irrelevant</td>
+                                    <td>text</td>
+                                    <td>placeholder</td>
+                                </tr>
+                                <tr>
+                                    <td>1,006</td>
+                                    <td>dashboard</td>
+                                    <td>illustrative</td>
+                                    <td>rich</td>
+                                    <td>data</td>
+                                </tr>
+                                <tr>
+                                    <td>1,007</td>
+                                    <td>placeholder</td>
+                                    <td>tabular</td>
+                                    <td>information</td>
+                                    <td>irrelevant</td>
+                                </tr>
+                                <tr>
+                                    <td>1,008</td>
+                                    <td>random</td>
+                                    <td>data</td>
+                                    <td>placeholder</td>
+                                    <td>text</td>
+                                </tr>
+                                <tr>
+                                    <td>1,009</td>
+                                    <td>placeholder</td>
+                                    <td>irrelevant</td>
+                                    <td>visual</td>
+                                    <td>layout</td>
+                                </tr>
+                                <tr>
+                                    <td>1,010</td>
+                                    <td>data</td>
+                                    <td>rich</td>
+                                    <td>dashboard</td>
+                                    <td>tabular</td>
+                                </tr>
+                                <tr>
+                                    <td>1,011</td>
+                                    <td>information</td>
+                                    <td>placeholder</td>
+                                    <td>illustrative</td>
+                                    <td>data</td>
+                                </tr>
+                                <tr>
+                                    <td>1,012</td>
+                                    <td>text</td>
+                                    <td>placeholder</td>
+                                    <td>layout</td>
+                                    <td>dashboard</td>
+                                </tr>
+                                <tr>
+                                    <td>1,013</td>
+                                    <td>dashboard</td>
+                                    <td>irrelevant</td>
+                                    <td>text</td>
+                                    <td>visual</td>
+                                </tr>
+                                <tr>
+                                    <td>1,014</td>
+                                    <td>dashboard</td>
+                                    <td>illustrative</td>
+                                    <td>rich</td>
+                                    <td>data</td>
+                                </tr>
+                                <tr>
+                                    <td>1,015</td>
+                                    <td>random</td>
+                                    <td>tabular</td>
+                                    <td>information</td>
+                                    <td>text</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                <script src="../static/js/dashboard.js"></script>
+
+                <footer>
+                    <div class="container">
+                        <hr>
+                    </div>
+                    <div class="text-center m-5">
+                        <h6>Copyright@CharityToday 2023</h6>
+                    </div>
+                </footer>
+
+
+            </main>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
